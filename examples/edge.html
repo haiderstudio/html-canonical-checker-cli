@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head><title>Edge cases</title></head>
+<body>
+<LINK REL="CANONICAL" HREF="https://example.com/edge">
+<link rel="stylesheet" href="style.css">
+<!-- A canonical link in a comment is not a link:
+<link rel="canonical" href="https://example.com/fake">
+-->
+<script>
+// A canonical link in a script string is not a link either:
+var tag = '<link rel="canonical" href="https://example.com/fake">';
+</script>
+<link
+  rel="stylesheet"
+  href="print.css">
+</body>
+</html>
